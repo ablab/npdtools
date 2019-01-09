@@ -1,0 +1,55 @@
+NPDtools: Natural Product Discovery tools
+
+Copyright (c) 2015-2019 Saint Petersburg State University, St. Petersburg, Russia
+Copyright (c) 2017-2019 Carnegie Mellon University, Pittsburgh, PA, USA
+Copyright (c) 2015-2017 University of California San Diego, La Jolla, CA, USA
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-------------------------------------------------------------------------------
+
+Contact:
+    npdtools.support@cab.spbu.ru
+
+-------------------------------------------------------------------------------
+
+References:
+
+Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Neha Garg, Louis-Felix Nothias, 
+Akihiro Ninomiya, Kentaro Takada, Pieter C. Dorrestein, Pavel A. Pevzner. 
+Dereplication of Peptidic Natural Products Through Database Search of Mass Spectra. 
+Nature Chemical Biology, 2017. doi: 10.1038/nchembio.2219. 
+First published online: October 31, 2016
+
+Alexey Gurevich, Alla Mikheenko, Alexander Shlemov, Anton Korobeynikov, 
+Hosein Mohimani, and Pavel A. Pevzner.
+Increased diversity of peptidic natural products revealed by modification-tolerant
+database search of mass spectra.
+Nature Microbiology, 2018. doi: 10.1038/s41564-017-0094-2
+First published online: January 22, 2018
+
+Hosein Mohimani, Alexey Gurevich, Alla Mikheenko, Alexander Shlemov, Anton Korobeynikov,
+Liu Cao, Egor Shcherbin, Louis-Felix Nothias, Pieter C. Dorrestein, and Pavel A. Pevzner.
+Dereplication of Microbial Metabolites Through Database Search of Mass Spectra.
+Nature Communications, 2018. doi: 10.1038/s41467-018-06082-8
+First published online: October 2, 2018
+
+Liu Cao, Alexey Gurevich, Kelsey L Alexander, C. Benjamin Naman, Tiago Leao,
+Evgenia Glukhov, Nathan A Moss, Tal Luzzatto Knaan, Fernando Vargas, Robby Quinn,
+Amina Bouslimani, Louis-Felix Nothias, Nitin K Singh, John G Sanders, Rodolfo A S Benitez,
+Luke R Thompson, Md-Nafiz Hamid, James T Morton, Alla Mikheenko, Alexander Shlemov,
+Anton Korobeynikov, Iddo Friedberg, Rob Knight, Kasthuri Venkateswaran, William Gerwick,
+Lena Gerwick, Peter C. Dorrestein, Pavel A. Pevzner, Hosein Mohimani.
+MetaMiner: A Peptidogenomics Approach for the Discovery of Ribosomally
+Synthesized and Post-translationally Modified Peptides.
+Submitted, 2019
