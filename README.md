@@ -113,7 +113,7 @@ To download [NPDtools macOS binaries](https://github.com/ablab/npdtools/releases
 and extract them, go to the directory in which you wish NPDtools to be installed and run:
 
 ``` bash
-    curl https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Darwin.tar.gz -o NPDtools-2.3.0-Darwin.tar.gz 
+    curl -L https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Darwin.tar.gz -o NPDtools-2.3.0-Darwin.tar.gz 
     tar -xzf NPDtools-2.3.0-Darwin.tar.gz
     cd NPDtools-2.3.0-Darwin
 ```
