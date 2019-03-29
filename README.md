@@ -1,4 +1,4 @@
-<font size=20>__NPDtools 2.3.0 Manual__</font>
+<font size=20>__NPDtools 2.4.0 Manual__</font>
 
 * [About NPDtools](#sec_intro)    
     * [Package content](#sec_intro_content)    
@@ -28,7 +28,7 @@ This manual will help you to install and run NPDtools.
 The latest version of the manual is available online at <https://github.com/ablab/npdtools>. 
 All projects news are at <http://cab.spbu.ru/software/npdtools/>.
  
-NPDtools version 2.3.0 was released under the Apache 2.0 License on January 9, 2019 
+NPDtools version 2.4.0 was released under the Apache 2.0 License on March 29, 2019 
 and can be downloaded from <https://github.com/ablab/npdtools/releases>.
 The software is developed in collaboration of [Saint Petersburg State University](http://cab.spbu.ru) (Russia), 
 [University of California San Diego](http://cseweb.ucsd.edu/~ppevzner/) (CA, USA) 
@@ -70,7 +70,9 @@ NPDtools requires a 64-bit Linux system or macOS and Python 2.7 to be pre-instal
 The MetaMiner pipeline also requires [GNU sed](https://www.gnu.org/software/sed/) 
 to be present in the `PATH` environment variable as `sed` 
 (this is always true for Linux systems but may require additional configurations on macOS since 
-GNU sed is usually installed there as `gsed`).  
+GNU sed is usually installed there as `gsed`). For presenting Spectral Network propagation graphs,
+MetaMiner also requires `matplotlib` and `networkx` Python libraries. If they are not installed, 
+the propagation will be generated in a plain text format only (see `--spec-network` option).
 
 You can also use NPDtools pipelines online on the [GNPS platform](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). 
 In this case, a registration is needed but it is quick and simple. 
@@ -92,13 +94,13 @@ In case of successful installation the following files should be present in the 
 <a name="sec_install_linux"></a>
 ## 	Downloading NPDtools binaries for Linux
 
-To download [NPDtools Linux binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Linux.tar.gz) 
+To download [NPDtools Linux binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Linux.tar.gz) 
 and extract them, go to the directory in which you wish NPDtools to be installed and run:
 
 ``` bash
-    wget https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Linux.tar.gz
-    tar -xzf NPDtools-2.3.0-Linux.tar.gz
-    cd NPDtools-2.3.0-Linux
+    wget https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Linux.tar.gz
+    tar -xzf NPDtools-2.4.0-Linux.tar.gz
+    cd NPDtools-2.4.0-Linux
 ```
 
 We further refer to this directory as `<npdtools_installation_dir>`. 
@@ -109,13 +111,13 @@ so consider adding this subdirectory to the `PATH` variable.
 <a name="sec_install_mac"></a>
 ## 	Downloading NPDtools binaries for macOS
 	
-To download [NPDtools macOS binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Darwin.tar.gz) 
+To download [NPDtools macOS binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Darwin.tar.gz) 
 and extract them, go to the directory in which you wish NPDtools to be installed and run:
 
 ``` bash
-    curl -L https://github.com/ablab/npdtools/releases/download/npdtools-2.3.0/NPDtools-2.3.0-Darwin.tar.gz -o NPDtools-2.3.0-Darwin.tar.gz 
-    tar -xzf NPDtools-2.3.0-Darwin.tar.gz
-    cd NPDtools-2.3.0-Darwin
+    curl -L https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Darwin.tar.gz -o NPDtools-2.4.0-Darwin.tar.gz 
+    tar -xzf NPDtools-2.4.0-Darwin.tar.gz
+    cd NPDtools-2.4.0-Darwin
 ```
 
 We further refer to this directory as `<npdtools_installation_dir>`. 
@@ -506,17 +508,28 @@ or [antiSMASH](https://antismash.secondarymetabolites.org)'s `.final.gbk`).
 MetaMiner specific options are:  
 `-a` (or `--antismash`)  
     Sequence files are antiSMASH output (`.final.gbk`). If not specified, the input files are expected to 
-    be raw genome nucleotide sequences in FASTA format (see also `--boa` option). Tested with antiSMASH v.2 output.
+    be raw genome nucleotide sequences in FASTA format (see also `--ripp` option). Tested with antiSMASH v.2 output.
        
-`--boa`                   
-    Sequence files are BOA output (protein `.fasta`). If not specified, the input files are expected to 
+`--ripp`                   
+    Sequence files are already predicted and translated RiPP sequences (protein `.fasta`), e.g. it is BOA output. 
+    If not specified, the input files are expected to 
     be raw genome nucleotide sequences in FASTA format (see also `--antismash` option).
     
 `-c <class>` (or `--class <class>`)  
     Class of RiPPs to look for. Valid choices are: 'formylated',
     'glycocin', 'lantibiotic', 'lap', 'lassopeptide', 'linaridin',
     'proteusin', 'cyanobactin', and 'methanobactin'. You can also specify 'all' to try all classes one by one.
-    *The default value is 'lantibiotic'*.  
+    *The default value is 'lantibiotic'*.
+    
+`--blind`                   
+    Enable search in a blind mode, i.e. search for new PTMs with arbitrary mass shifts. Could be very slow.
+    
+`--spec-network`  
+    Path to the Spectral Network output 
+    ([GNPS Data Analysis workflow](https://gnps.ucsd.edu/ProteoSAFe/index.jsp?params=%7B%22workflow%22:%22METABOLOMICS-SNETS-V2%22,%22library_on_server%22:%22d.speclibs;%22%7D) 
+    also known as Molecular Networking). If specified, MetaMiner will identify connected components related 
+    to the most significant RiPP identifications and report them in plain text and graphical formats 
+    (saved under `<outdir>/spec_nets/`).
 
 #### Usage example 
 A sample run of MetaMiner may look like this:
@@ -533,7 +546,7 @@ See important notes on specifying paths of the running script and `test_data` in
 [beginning of this section](#sec_running). 
 
 If the run is finished correctly, you will see identification of a lantibiotic with "TGSQVSLLVCEYSSLSVVLCTP" original sequence 
-and "T-18GS-18QVS-18LLVCEYS-18SLSVVLCTP" sequence after modifications in `dereplicator_outdir/significant_matches.tsv`.
+and "T-18GS-18QVS-18LLVCEYS-18SLSVVLCTP" sequence after modifications in `metaminer_outdir/significant_matches.tsv`.
 The modifications "T-18" and "S-18" correspond to dehydrobutyrine and dehydroalanine, respectively.
 These sequences correspond to AmfS peptide, you may read more about it in [Ueda et al, 2002](https://www.ncbi.nlm.nih.gov/pubmed/11844785).
 

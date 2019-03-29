@@ -1,4 +1,9 @@
 
+## NPDtools 2.4.0, 29 March 2019
+* NEW: Added SpecNets propagation in MetaMiner (see --spec-network)
+* NEW: Added blind search mode in MetaMiner (see --blind)
+* CHANGE: Improvements in performance of Dereplicator+.
+
 ## NPDtools 2.3.0, 9 January 2019
 * NEW: Added manual.
 * CHANGE: MetaRiPPquest renamed to MetaMiner.
