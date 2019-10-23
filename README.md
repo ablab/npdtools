@@ -560,9 +560,7 @@ For VarQuest please cite [Gurevich et al, Nature Microbiology, 2018](https://www
 
 For Dereplicator+ please cite [Mohimani et al, Nature Communications, 2018](https://www.nature.com/articles/s41467-018-06082-8).
 
-For MetaMiner please cite Cao et al, 
-*MetaMiner: A Peptidogenomics Approach for the Discovery of Ribosomally Synthesized and Post-translationally Modified Peptides,* 
-Submitted, *2019* (initial version of the paper is [available on bioRxiv](https://www.biorxiv.org/content/early/2017/12/03/227504)).
+For MetaMiner please cite [Cao et al, Cell Systems, 2019](https://www.cell.com/cell-systems/pdfExtended/S2405-4712(19)30312-6).
 
 <a name="sec_feedback"></a>
 # Feedback and bug reports
