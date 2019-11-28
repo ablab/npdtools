@@ -1,4 +1,4 @@
-<font size=20>__NPDtools 2.4.0 Manual__</font>
+<font size=20>__NPDtools 2.5.0 Manual__</font>
 
 * [About NPDtools](#sec_intro)    
     * [Package content](#sec_intro_content)    
@@ -28,7 +28,7 @@ This manual will help you to install and run NPDtools.
 The latest version of the manual is available online at <https://github.com/ablab/npdtools>. 
 All projects news are at <http://cab.spbu.ru/software/npdtools/>.
  
-NPDtools version 2.4.0 was released under the Apache 2.0 License on March 29, 2019 
+NPDtools version 2.5.0 was released under the Apache 2.0 License on November 28, 2019 
 and can be downloaded from <https://github.com/ablab/npdtools/releases>.
 The software is developed in collaboration of [Saint Petersburg State University](http://cab.spbu.ru) (Russia), 
 [University of California San Diego](http://cseweb.ucsd.edu/~ppevzner/) (CA, USA) 
@@ -38,20 +38,25 @@ and [Carnegie Mellon University](http://mohimanilab.cbd.cmu.edu) (PA, USA).
 ## Package content
 
 The current version of NPDtools includes  
-* **Dereplicator** — a tool for identification of peptidic natural products (PNPs) through database search of mass spectra
-* **VarQuest** — a tool for modification-tolerant identification of novel variants of PNPs
-* **Dereplicator+** — a tool for identification of metabolites (both peptidic and non-peptidic) through database search of mass spectra
+* **Dereplicator** — a tool for identification of peptidic natural products (PNPs) through database search of mass spectra  
+* **VarQuest** — a tool for modification-tolerant identification of novel variants of PNPs  
+* **Dereplicator+** — a tool for identification of metabolites (both peptidic and non-peptidic) through database search of mass spectra  
 * **MetaMiner** (former *RiPPquest*, *MetaRiPPquest*) — 
 a tool implementing metabologenomics approach for the discovery of 
-ribosomally synthesized and post-translationally modified peptides (RiPPs)
+ribosomally synthesized and post-translationally modified peptides (RiPPs)  
+
+This manual includes basic information on all these tools. 
+If you are interested in MetaMiner only, feel free to skip this document and read detailed [MetaMiner User Guide](docs/MetaMiner.md). 
 
 <a name="sec_intro_data"></a>
 ## Supported data
 
 All pipelines in NPDtools work with liquid chromatography–tandem mass spectrometry data (LS-MS/MS). 
 Spectra files must be centroided and be in an open spectrum format (**MGF**, **mzXML**, **mzML** or **mzData**). 
-NPDtools natively supports [MGF](http://www.matrixscience.com/help/data_file_help.html) (Mascot Generic Format) 
-and uses [msconvert](http://proteowizard.sourceforge.net/tools/msconvert.html ) 
+NPDtools natively supports MGF ([Mascot Generic Format](http://www.matrixscience.com/help/data_file_help.html), 
+our parser is based on [libmgf](http://kirchnerlab.github.io/libmgf/)) 
+and mzXML/mzData (our parser is based on [RAMP](http://tools.proteomecenter.org/wiki/index.php?title=Software:RAMP)). 
+We use [msconvert](http://proteowizard.sourceforge.net/tools/msconvert.html ) 
 utility from the [ProteoWizard package](http://proteowizard.sourceforge.net/index.html) 
 to convert spectra in other formats to MGF. 
 
@@ -66,13 +71,11 @@ See [the corresponding section](#sec_run_genomic_pipelines) for the details on a
 <a name="sec_install"></a>
 # Installation
 
-NPDtools requires a 64-bit Linux system or macOS and Python 2.7 to be pre-installed on it. 
-The MetaMiner pipeline also requires [GNU sed](https://www.gnu.org/software/sed/) 
-to be present in the `PATH` environment variable as `sed` 
-(this is always true for Linux systems but may require additional configurations on macOS since 
-GNU sed is usually installed there as `gsed`). For presenting Spectral Network propagation graphs,
-MetaMiner also requires `matplotlib` and `networkx` Python libraries. If they are not installed, 
-the propagation will be generated in a plain text format only (see `--spec-network` option).
+NPDtools requires a 64-bit Linux system or macOS and Python2 or Python3 to be pre-installed on it 
+(versions 2.6-2.7, 3.3 and higher are supported). For parallel processing of multiple spectra files, 
+NPDtools also requires `joblib` Python library. If not installed, everything would be processed in a single thread. 
+For presenting Spectral Network propagation graphs, MetaMiner requires `matplotlib` and `networkx` 
+Python libraries. If they are not installed, the propagation will be generated in a plain text format only (see `--spec-network` option).
 
 You can also use NPDtools pipelines online on the [GNPS platform](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-theoretical.jsp). 
 In this case, a registration is needed but it is quick and simple. 
@@ -94,13 +97,13 @@ In case of successful installation the following files should be present in the 
 <a name="sec_install_linux"></a>
 ## 	Downloading NPDtools binaries for Linux
 
-To download [NPDtools Linux binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Linux.tar.gz) 
+To download [NPDtools Linux binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.5.0/NPDtools-2.5.0-Linux.tar.gz) 
 and extract them, go to the directory in which you wish NPDtools to be installed and run:
 
-``` bash
-    wget https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Linux.tar.gz
-    tar -xzf NPDtools-2.4.0-Linux.tar.gz
-    cd NPDtools-2.4.0-Linux
+```   
+    wget https://github.com/ablab/npdtools/releases/download/npdtools-2.5.0/NPDtools-2.5.0-Linux.tar.gz
+    tar -xzf NPDtools-2.5.0-Linux.tar.gz
+    cd NPDtools-2.5.0-Linux
 ```
 
 We further refer to this directory as `<npdtools_installation_dir>`. 
@@ -111,13 +114,13 @@ so consider adding this subdirectory to the `PATH` variable.
 <a name="sec_install_mac"></a>
 ## 	Downloading NPDtools binaries for macOS
 	
-To download [NPDtools macOS binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Darwin.tar.gz) 
+To download [NPDtools macOS binaries](https://github.com/ablab/npdtools/releases/download/npdtools-2.5.0/NPDtools-2.5.0-Darwin.tar.gz) 
 and extract them, go to the directory in which you wish NPDtools to be installed and run:
 
-``` bash
-    curl -L https://github.com/ablab/npdtools/releases/download/npdtools-2.4.0/NPDtools-2.4.0-Darwin.tar.gz -o NPDtools-2.4.0-Darwin.tar.gz 
-    tar -xzf NPDtools-2.4.0-Darwin.tar.gz
-    cd NPDtools-2.4.0-Darwin
+```   
+    curl https://github.com/ablab/npdtools/releases/download/npdtools-2.5.0/NPDtools-2.5.0-Darwin.tar.gz -o NPDtools-2.5.0-Darwin.tar.gz 
+    tar -xzf NPDtools-2.5.0-Darwin.tar.gz
+    cd NPDtools-2.5.0-Darwin
 ```
 
 We further refer to this directory as `<npdtools_installation_dir>`. 
@@ -136,7 +139,7 @@ we first describe them altogether. Further, we explain specifics of each individ
 give examples of running commands for each of them.
 
 To run a NPDtools pipeline from the command line, type
-``` bash
+```   
     <pipeline>.py [options] <spectra_file> [<spectra_file>] -o <output_dir>
 ```
 where `<pipeline>` is one of `dereplicator`, `varquest`, `dereplicator+`, or `metaminer`; 
@@ -149,13 +152,12 @@ they will be processed independently (each one by a separate thread).
 
 Note that here and below we assume that NPDtools executable's directory (`<npdtools_installation_dir>/bin/`) 
 is added to the `PATH` variable. Otherwise, you need to start your commands as follows
-``` bash
+```   
     <npdtools_installation_dir>/bin/<pipeline>.py ...
 ```
-Finally, if you have multiple Python versions installed on your system, 
-you may need to explicitly specify the proper version before the running script (we support v.2.7 only):
-``` bash
-    python2.7 <npdtools_installation_dir>/bin/<pipeline>.py ...
+or  
+```   
+    python <npdtools_installation_dir>/bin/<pipeline>.py ...
 ```
 
 To demonstrate working examples of each pipeline, 
@@ -164,7 +166,7 @@ we use small test datasets provided within the NPDtools package and also availab
 We further assume that `test_data` is in the current working directory and give the corresponding relative paths. 
 If you use test dataset from the installation package, 
 you may need to specify the full paths as 
-```bash
+```  
    <npdtools_installation_dir>/share/npdtools/test_data/
 ```
 
@@ -188,8 +190,15 @@ you may need to specify the full paths as
     Number of threads. *The default value is 50% of all available CPUs* but not less than 1. 
     If NPDtools fails to determine the number of CPUs, the maximum number of threads is set to *4*.
 
+`--debug`  
+    Run in the debug mode: more verbose output and keep intermediate files.
+
+`--version`                           
+    Show program's version number and exit.
+    
 `-h` (or `--help`)                         
     Show all available options and exit.
+    
  
 ### Advanced options
 
@@ -218,7 +227,13 @@ you may need to specify the full paths as
 
 `--fdr`  
     Estimate False Discovery Rate (approximately doubles computation time). 
-
+    
+`--reuse`  
+    Reuse previously generated results if possible.
+    This option is useful for rerunning a crashed job, or for extending the set of input files in successfully completed job.
+    In both cases, you should use the same output directory as for the preceding run and keep the the main configuration 
+    parameters unchanged (e.g. fragment ion tolerance threshold).
+    
 <a name="sec_"></a>
 ## Common output files
  
@@ -295,7 +310,7 @@ the test data provided inside NPDtools package. You could also download a
 
 
 The following options are used to specify the database:  
-`--db-path <dirpath>`     
+`-d <dirpath>` (or `--db-path <dirpath>`)     
   Relative or absolute path to the natural products database root directory. 
   Paths of individual compounds (in the description file) should be relative to this directory.
   For example, if a compound is located in `/path/to/db/mol_dir/compound.mol` and 
@@ -313,6 +328,14 @@ The following options are used to specify the database:
   in the database description file. *The default location is `library.smiles` 
   inside the database dir (provided with `--db-path` option)*. The SMILES are used only for filling `significant_` reports,
   if not present, `SMILES` column in the reports will be missing (everything else will be working properly).
+  
+`--nps`  
+  Use a more advanced [NPS](http://cab.spbu.ru/software/nps/) approach to scoring and 
+  evaluating the statistical significance of PSMs. 
+  The method takes into account intensities of MS/MS peaks and occurrence 
+  of various additional ions (currently isotopic shift and neutral loss of 
+  water are supported). More accurate but slower than the default method. 
+  **Currently available in Dereplicator and VarQuest only.**
     
 <a name="sec_run_db_dereplicator"></a>    
 ### Dereplicator
@@ -341,7 +364,7 @@ The specific Dereplicator pipeline options are
     
 #### Usage example   
 A sample run of Dereplicator may look like this:
-```bash
+```  
     dereplicator.py test_data/dereplicator/ --db-path test_data/sample_database/ -o dereplicator_outdir
 ```
 In this case, all spectra files in `test_data/dereplicator/` will be searched against 
@@ -376,7 +399,7 @@ VarQuest also accepts `--fdr-limit` and `--p-value-limit` options from Dereplica
 
 #### Usage example 
 A sample run of VarQuest may look like this:
-```bash
+```  
     varquest.py test_data/varquest/ --db-path test_data/sample_database/ -o varquest_outdir
 ```
 In this case, all spectra files in `test_data/varquest/` will be searched in 
@@ -455,7 +478,7 @@ The alternative (more strict) defaults are `--pm_thresh 0.005` and `--product_io
 
 #### Usage example 
 A sample run of Dereplicator+ may look like this:
-```bash
+```  
     dereplicator+.py test_data/dereplicator+/ --db-path test_data/sample_database/ -o dereplicator+_outdir
 ```
 In this case, all spectra files in `test_data/dereplicator+/` will be searched against 
@@ -479,42 +502,45 @@ Thus, the genomic data is **required** to run this type of workflows. The data c
 or specific genome mining tools' output (protein sequences of the translated gene clusters, see more info below).
 The current version of NPDtools includes only one metabologenomic pipeline – *MetaMiner* – intended for identification of RiPPs.
 We are also working on specialized tools for identification of NRPs and other classes of natural products (will be available in future releases).
-
+You may find a detailed MetaMiner user guide [here](docs/MetaMiner.md). Below are some basic information from it.   
   
 The following options are used to specify the genomic sequences:  
 `-s <path>` (or `--sequence <path>`)  
     Path to a sequnce file  or to a directory with multiple sequence files inside.
     In the latter case, NPDtools recursively walks through the directory and picks up all files 
-    with appropriate extensions (by default: `.fna`, `.fasta`, or `.fa`; case insensitive). 
+    with appropriate extensions (`.fna`, `.fasta`, or `.fa` for nucleotide or amino acid FASTA files, 
+    `.gbk` for [antiSMASH](https://antismash.secondarymetabolites.org) output, `.txt` for [BOA](https://github.com/nafizh/Boa) output). 
     You can specify an unlimited number of input sequence files/directories, 
     they will be processed independently (see also `--correspondence` option below).
-    *By default, we assume that sequences are raw nucleotide input but this can be modified by specific options (see below)*.
-    **At least one sequence file is required**.
+    *We determine sequence file type by its extension. 
+    For separating between nucleotide and amino acid FASTA files, the content of a few first entries is analysed.*
+    **At least one sequence file is required** unless correspondence file with RefSeq IDs is specified (see `-C` option below).
 
 `-C <filepath>` (or `--correspondence <filepath>`)  
     Path to a file describing correspondence between sequence and spectra files. 
-    The file should be tab-separated and has two columns listing basenames of spectra and sequence filepaths.
-    If not provided, the all-vs-all analysis will be performed.
+    The file should be tab-separated and has two columns listing basenames of spectra and sequence files.
+    Sequence column may include RefSeq IDs prefixed with `#RefSeq:`. In the latter case, 
+    the corresponding references are automatically downloaded from NCBI. 
+    If not provided, the all-vs-all analysis is performed. An example of valid correspondence file is in 
+    `test_data/metaminer/corresp/`.
+    
+`--keep-ga-files`  
+    Do not remove results of genome analysis step. 
+    Later they can be reused against other spectra files with `--reuse` option 
+    (see the [the common options subsection](#sec_run_opts)).
+    
 
 <a name="sec_run_genomic_metaminer"></a>
 ### MetaMiner
 
 MetaMiner can identify various classes of RiPPs by combining genome/metagenome mining with analysis of tandem mass spectra.
 The tool either process raw genome nucleotide sequences with [HMMER](http://hmmer.org/) v.3.1 
-(nucleotides are translated into proteins using all 6 possible frames) or works with output
-of third-party genome mining tools ([BOA](https://github.com/nafizh/Boa)'s protein `.fasta` 
-or [antiSMASH](https://antismash.secondarymetabolites.org)'s `.final.gbk`).
+(nucleotides are translated into amino acids using all 6 possible frames) or works with output
+of third-party genome mining tools (amino acid `.fasta` of translated RiPP sequences, e.g. determined by [BOA](https://github.com/nafizh/Boa), 
+or raw BOA output (usually `<prefix>.annotated.txt` files), or [antiSMASH](https://antismash.secondarymetabolites.org)'s 
+`<prefix>.final.gbk` or `<prefix>.gbk` files -- tested with antiSMASH v.2 output).
 
 MetaMiner specific options are:  
-`-a` (or `--antismash`)  
-    Sequence files are antiSMASH output (`.final.gbk`). If not specified, the input files are expected to 
-    be raw genome nucleotide sequences in FASTA format (see also `--ripp` option). Tested with antiSMASH v.2 output.
-       
-`--ripp`                   
-    Sequence files are already predicted and translated RiPP sequences (protein `.fasta`), e.g. it is BOA output. 
-    If not specified, the input files are expected to 
-    be raw genome nucleotide sequences in FASTA format (see also `--antismash` option).
-    
 `-c <class>` (or `--class <class>`)  
     Class of RiPPs to look for. Valid choices are: 'formylated',
     'glycocin', 'lantibiotic', 'lap', 'lassopeptide', 'linaridin',
@@ -533,11 +559,11 @@ MetaMiner specific options are:
 
 #### Usage example 
 A sample run of MetaMiner may look like this:
-```bash
-    metaminer.py test_data/metaminer/ -s test_data/metaminer/ -o metaminer_outdir
+```  
+    metaminer.py test_data/metaminer/msms/ -s test_data/metaminer/fasta/ -o metaminer_outdir
 ```
-In this case, all spectra files in `test_data/metaminer/` will be searched against 
-all sequence files in the same directory. In this particular case, it is a search of `test_data/metaminer/AmfS.mgf` spectrum
+In this case, all spectra files in `test_data/metaminer/msms/` will be searched against 
+all sequence files in `test_data/metaminer/fasta/`. In this particular case, it is a search of `test_data/metaminer/AmfS.mgf` spectrum
 against `test_data/metaminer/S.griseus_fragment.fasta` genome fragment. The search mode (considered RiPP class) is 'lantibiotic' (by default).
 The identification results will be saved in `metaminer_outdir`. 
 The search is performed with all default parameters, 
@@ -560,9 +586,10 @@ For VarQuest please cite [Gurevich et al, Nature Microbiology, 2018](https://www
 
 For Dereplicator+ please cite [Mohimani et al, Nature Communications, 2018](https://www.nature.com/articles/s41467-018-06082-8).
 
-For MetaMiner please cite Cao et al, 
-*MetaMiner: A Peptidogenomics Approach for the Discovery of Ribosomally Synthesized and Post-translationally Modified Peptides,* 
-Submitted, *2019* (initial version of the paper is [available on bioRxiv](https://www.biorxiv.org/content/early/2017/12/03/227504)).
+For MetaMiner please cite [Cao et al, Cell Systems, 2019](https://www.cell.com/cell-systems/pdfExtended/S2405-4712(19)30312-6).
+
+For NPS (advanced scoring and significance estimation in Dereplicator and VarQuest) please cite 
+[Tagirdzhanov et al, Bioinformatics, 2019](https://academic.oup.com/bioinformatics/article/35/14/i315/5529154). 
 
 <a name="sec_feedback"></a>
 # Feedback and bug reports

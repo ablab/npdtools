@@ -50,6 +50,13 @@ Amina Bouslimani, Louis-Felix Nothias, Nitin K Singh, John G Sanders, Rodolfo A 
 Luke R Thompson, Md-Nafiz Hamid, James T Morton, Alla Mikheenko, Alexander Shlemov,
 Anton Korobeynikov, Iddo Friedberg, Rob Knight, Kasthuri Venkateswaran, William Gerwick,
 Lena Gerwick, Peter C. Dorrestein, Pavel A. Pevzner, Hosein Mohimani.
-MetaMiner: A Peptidogenomics Approach for the Discovery of Ribosomally
-Synthesized and Post-translationally Modified Peptides.
-Submitted, 2019
+MetaMiner: A Scalable Peptidogenomics Approach for Discovery of Ribosomal
+Peptide Natural Products with Blind Modifications from Microbial Communities
+Cell Systems, 2019. doi: 10.1016/j.cels.2019.09.004
+First published online: October 16, 2019
+
+Azat M Tagirdzhanov, Alexander Shlemov, Alexey Gurevich.
+NPS: scoring and evaluating the statistical significance of peptidic natural
+product–spectrum matches.
+Bioinformatics, 2019. doi: 10.1093/bioinformatics/btz374
+First published online: July 5, 2019

@@ -1,0 +1,29 @@
+
+## NPDtools 2.5.0, 28 November 2019
+* NEW: Added NPS method in Dereplicator/VarQuest (see --nps)
+* NEW: Added support for Python3
+* NEW: Added --debug, --reuse, and --version options
+* CHANGE: Improved documentation and test data for MetaMiner
+* CHANGE: Auto-detection of sequence file type in MetaMiner
+* FIX: Fixed parsing of MGF files with uncommon fields (once more)
+
+## NPDtools 2.4.0, 29 March 2019
+* NEW: Added SpecNets propagation in MetaMiner (see --spec-network)
+* NEW: Added blind search mode in MetaMiner (see --blind)
+* CHANGE: Improvements in performance of Dereplicator+
+
+## NPDtools 2.3.0, 9 January 2019
+* NEW: Added manual
+* CHANGE: MetaRiPPquest renamed to MetaMiner
+* CHANGE: Improvements in performance and functionality of MetaMiner
+
+## NPDtools 2.2.0, 21 June 2018
+* NEW: Added Dereplicator+
+* FIX: Fixed parsing of MGF files with uncommon fields
+
+## NPDtools 2.1.0, 9 February 2018
+* NEW: Added MetaRiPPquest
+* FIX: Multiple bugfixes (mostly in Dereplicator)
+
+## NPDtools 2.0.0, 21 September 2017
+* Initial public release. Includes Dereplicator and VarQuest
