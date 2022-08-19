@@ -1,0 +1,8 @@
+enabler Asn-synthase
+single D-18 D C4H5NO3 none 7 all -1
+single D-18 D C4H5NO3 none 8 all -1
+single D-18 D C4H5NO3 none 9 all -1
+single E-18 E C5H7NO3 none 7 all -1
+single E-18 E C5H7NO3 none 8 all -1
+single E-18 E C5H7NO3 none 9 all -1
+single C-1 C C3H6NO2S Dsb.mol all DsbA -1

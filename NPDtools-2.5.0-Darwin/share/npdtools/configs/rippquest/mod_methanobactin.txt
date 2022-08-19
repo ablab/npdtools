@@ -1,0 +1,8 @@
+enabler TIGR04071
+single C-1 C C3H6NO2S Disulfide-Cys.mol all DsbB 0
+single C-6 C C3H5NO2S pyrazinedione_thioamide.mol all all -1
+single C-4 C C3H3NO2S oxazolone_thioamide.mol all all -1
+single L-1 L C6H10O3 transaminated_leucine.mol N-ter all -1
+single T+80 T C4H9NO6S sulfonated_theronine.mol all all -1
+allow_cter_fragment 3
+allow_adduct 62.9296

@@ -1,0 +1,4 @@
+enabler DsbB
+single C+162 C C9H17NO7S Glucose-Cys.mol all Glycos-transf-2 0
+single C-1 C C3H6NO2S DsbB.mol all DsbB 0
+constraint 1 C 1 eq 0

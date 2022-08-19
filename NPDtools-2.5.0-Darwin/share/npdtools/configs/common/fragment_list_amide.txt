@@ -1,0 +1,9 @@
+bond Fragmentation_rule/Amide_rule/amide_1.mol 0 amide_1 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_2.mol 2 amide_2 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_3.mol 2 amide_3 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_4.mol 0 amide_4 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_5.mol 0 amide_5 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_6.mol 2 amide_6 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_7.mol 2 amide_7 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_8.mol 2 amide_8 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/Amide_rule/amide_9.mol 0 amide_9 1 1 1.0078250321 -1.0078250321

@@ -1,0 +1,6 @@
+enabler YcaO
+single C-20 C C3H3NOS none all all 0
+single T-20 T C4H5NO2 none all all 0
+single S-20 S C3H3NO2 none all all 0
+single T-18 T C4H7NO2 none all all 0
+single R+28 R C8H18N4O2 none N-ter Methyltransf-31 0

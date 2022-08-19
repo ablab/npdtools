@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parameters>
+<parameter name="ANALOG_SEARCH">0</parameter>
+<parameter name="CLUSTER_MIN_SIZE">1</parameter>
+<parameter name="CREATE_CLUSTER_BUCKETS">1</parameter>
+<parameter name="CREATE_ILI_OUTPUT">0</parameter>
+<parameter name="CREATE_TOPOLOGY_SIGNATURES">0</parameter>
+<parameter name="FILTER_LIBRARY">1</parameter>
+<parameter name="FILTER_PRECURSOR_WINDOW">1</parameter>
+<parameter name="FILTER_STDDEV_PEAK_INT">0.0</parameter>
+<parameter name="FIND_MATCHES_IN_PUBLIC_DATA">0</parameter>
+<parameter name="MAXIMUM_COMPONENT_SIZE">100</parameter>
+<parameter name="MAX_SHIFT_MASS">100.0</parameter>
+<parameter name="MIN_MATCHED_PEAKS">6</parameter>
+<parameter name="MIN_MATCHED_PEAKS_SEARCH">6</parameter>
+<parameter name="MIN_PEAK_INT">0.0</parameter>
+<parameter name="PAIRS_MIN_COSINE">0.5</parameter>
+<parameter name="RUN_MSCLUSTER">on</parameter>
+<parameter name="SCORE_THRESHOLD">0.7</parameter>
+<parameter name="TOPK">10</parameter>
+<parameter name="WINDOW_FILTER">1</parameter>
+<parameter name="desc">ISS spec net (small data preset) HH mode -- C18p_5uL_NASA_Sample_BB{2..4}</parameter>
+<parameter name="email">user@example.com</parameter>
+<parameter name="reanalyzed_datasets">MSV000080102</parameter>
+<parameter name="spec_on_server">f.MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB2_01_25958.mzML;f.MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB3_01_25959.mzML;f.MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB4_01_25960.mzML;</parameter>
+<parameter name="task">c69f2f5d09be43bea8587d88cefe997e</parameter>
+<parameter name="tolerance.Ion_tolerance">0.02</parameter>
+<parameter name="tolerance.PM_tolerance">0.02</parameter>
+<parameter name="upload_file_mapping">spec-00000.mzML|MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB2_01_25958.mzML</parameter>
+<parameter name="upload_file_mapping">spec-00001.mzML|MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB3_01_25959.mzML</parameter>
+<parameter name="upload_file_mapping">spec-00002.mzML|MSV000080102/ccms_peak/mzXML/Samples/C18p_5uL_NASA_Sample_BB4_01_25960.mzML</parameter>
+<parameter name="user">gurevich</parameter>
+<parameter name="uuid">1E14813D-309E-0001-1AC4-CD9AAA90EAB0</parameter>
+<parameter name="workflow">METABOLOMICS-SNETS-V2</parameter>
+</parameters>

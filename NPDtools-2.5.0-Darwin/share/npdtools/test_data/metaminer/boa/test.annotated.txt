@@ -1,0 +1,2 @@
+bacteriocin_name	ncbi_id_of_anchor_gene	blast_bacteriocin_start	blast_bacteriocin_end	blast_bacteriocin_strand	accession_id_of_whole_genome	anchor_gene_start	anchor_gene_end	anchor_gene_strand	sequence_of_bacteriocin
+pep1	-	-	-	-	-	-	-	-	TGSQVSLLVCEYSSLSVVLCTP

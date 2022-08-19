@@ -1,0 +1,3 @@
+SpectraFile	SequenceFile
+test_data/metaminer/msms/AmfS.mgf	S.griseus_fragment.fasta
+AmfS.mgf	#RefSeq:NC_010572.1

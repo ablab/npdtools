@@ -1,0 +1,7 @@
+enabler CypL
+single S-18 S C3H5NO2 Dha.mol all CypL 0
+single T-18 T C4H7NO2 Dhb.mol all CypL 0
+single C-80 C C2H3N X.mol C-ter Flavoprotein 0 
+single A+28 A C5H11NO2 X.mol N-ter CypM 0
+single I+28 I C8H17NO2 X.mol N-ter CypM 0
+single L+28 L C8H17NO2 X.mol N-ter CypM 0

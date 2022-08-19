@@ -1,0 +1,1 @@
+bond Fragmentation_rule/General_rule/OC.mol 0 OC 1 1 1.0078250321 -1.0078250321

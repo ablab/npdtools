@@ -1,0 +1,165 @@
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+3615	6	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	941	test_data/molnet/example_RiPP.fasta	lantibiotic	TSTSIWASTVSNHC	TSTS-18IW-369.18399AS-18TVS-18NHT-64	8	1.4e-11	0	502.741	256.831	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4754	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	828	test_data/molnet/example_RiPP.fasta	lantibiotic	TVTSTSIWASTVSNHC	T-17VTS+16TS-16IWASTVS-18NHC-50.00885	10	2.3e-14	0	804.864	225.798	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4567	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	888	740.831	241.475
+	3735	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	833	536.916	227.286
+	4011	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	834	610.781	227.391
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4568	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	889	740.862	241.892
+	4754	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	835	804.869	227.785
+	4165	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	804	667.297	219.524
+	3743	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	831	538.349	226.687
+	3810	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	821	562.279	224.083
+	3736	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	741	537.254	202.794
+	3534	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	751	487.89	205.454
+	3980	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	793	602.774	216.571
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+3615	6	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	936	test_data/molnet/example_RiPP.fasta	lantibiotic	STSIWASTVSNHC	S-15TSIWAST-18VSN-369.12303HC	8	2.5e-11	0	502.75	254.148	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4678	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	660	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	TTVTVTSTSI-411.27462WASTVS-18NHC-34	10	2.7e-14	0	766.342	181.457	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4679	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	668	766.381	183.563
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4678	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	660	766.342	181.457
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4824	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1040	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	TTVT-18VT-18S-18T-18SIWASTVSNH-183.98703C	8	4.0e-11	0	869.963	281.776	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4189	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1004	test_data/molnet/example_RiPP.fasta	lantibiotic	TVTSTSIWASTVSNHC	T-18VTS-18T-18S-16IWAS-18TVS-18NH-245.06800C	8	4.6e-11	0	671.838	272.432	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4791	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	909	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	T-18T-18VT-18VTST-18S-18IW-123.10807AS-18T-18VSNHT-64	8	4.7e-11	0	840.398	246.875	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4782	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	895	828.926	243.486
+	4792	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	914	840.428	248.218
+	4790	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	902	839.917	245.332
+	4783	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	897	829.409	243.789
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4800	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	896	847.901	243.735
+	4791	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	909	840.398	246.875
+	3955	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	823	594.293	224.585
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4332	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	577	test_data/molnet/example_RiPP.fasta	lantibiotic	TSTSIWASTVSNHC	T-18ST-18SIW+34ASTVSNHC-88.03100	8	4.8e-11	0	702.293	160.025	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4743	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	764	test_data/molnet/example_RiPP.fasta	lantibiotic	TSTSIWASTVSNHC	TST-18S-18IWAST+146.65224VS-18NHC	8	4.8e-11	0	793.648	209.681	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4702	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	602	test_data/molnet/example_RiPP.fasta	lantibiotic	TVTSTSIWASTVSNHC	T-18VT-18S-18T-18S-18IW+34ASTVS-92.05728NHC	8	5.4e-11	0	773.322	166.616	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4735	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	894	test_data/molnet/example_RiPP.fasta	lantibiotic	TVTVTSTSIWASTVSNHC	TVTVTS-16TS-18IWAS-18T-18VS-247.05151NHC	8	6.0e-11	0	788.915	244.231	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4876	2	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	1353	957.492	366.768
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4884	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	1359	962.984	368.372
+	4735	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	894	788.915	244.231
+	4905	2	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	1406	1000.01	380.932
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4599	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	819	test_data/molnet/example_RiPP.fasta	lantibiotic	TVTVTSTSIWASTVSNHC	TVTVTS-332.20866TSIWAS-18T-18VSNHC-34	8	6.0e-11	0	746.345	223.391	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4754	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	823	test_data/molnet/example_RiPP.fasta	lantibiotic	ITTVTVTSTSIWASTVSNHC	IT-18TVT-357.25468VT-18S-18T-18SIWAS-18T-18VSNHC-34	8	6.2e-11	0	804.867	224.471	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4567	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	888	740.831	241.475
+	3735	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	833	536.916	227.286
+	4011	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	834	610.781	227.391
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4568	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	889	740.862	241.892
+	4754	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	835	804.869	227.785
+	4165	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	804	667.297	219.524
+	3743	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	831	538.349	226.687
+	3810	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	821	562.279	224.083
+	3736	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	741	537.254	202.794
+	3534	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	751	487.89	205.454
+	3980	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	793	602.774	216.571
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4894	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	733	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	T-18T-18VTVT+31.05407ST-18SIWAS-18TVSNHC	8	6.3e-11	0	977.484	200.7	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4790	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	907	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	T-18T-18VTVT-18S-18TS-18IW+34AS-18T-18VS-18NH-206.03417C	8	6.3e-11	0	839.899	246.674	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4782	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	895	828.926	243.486
+	4792	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	914	840.428	248.218
+	4791	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	909	840.398	246.875
+	4783	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	897	829.409	243.789
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4800	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	896	847.901	243.735
+	3955	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	823	594.293	224.585
+	4790	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	902	839.917	245.332
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4867	2	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	899	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	TTVT-18VTST-18SIW-53.03341AS-18T-18VSNHC	8	6.3e-11	0	935.44	245.587	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4813	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	674	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	T-18T-18VT-18VT-209.14407STS-18IWAST-18VS+16NHC	8	6.3e-11	0	856.368	185.142	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4088	1	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	559	643.264	155.311
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4813	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	668	856.378	183.588
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4792	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	914	test_data/molnet/example_RiPP.fasta	lantibiotic	TTVTVTSTSIWASTVSNHC	T-18T-18VT-18VT-18S-18T-18S-18IWAS-18T-18VSNH-153.00482C	8	6.3e-11	0	840.428	248.218	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4791	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	909	840.398	246.875
+	4790	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	902	839.917	245.332
+	4782	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	895	828.926	243.486
+	4783	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	897	829.409	243.789
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4792	1	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	914	840.428	248.218
+	4800	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	896	847.901	243.735
+	3955	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	823	594.293	224.585
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4872	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	983	test_data/molnet/example_RiPP.fasta	lantibiotic	TITTVTVTSTSIWASTVSNHC	T-18ITTVT-18VT-18S-18T-18S-18IWASTV-138.96035SNHC-80	8	6.5e-11	0	941.535	266.858	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4872	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	979	test_data/molnet/example_RiPP.fasta	lantibiotic	TITTVTVTSTSIWASTVSNHC	T-18ITTVT-18VT-18S-18T-18S-18IW-122.96224AS-16TVSNHC-80	8	6.5e-11	0	941.537	265.349	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4872	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	984	test_data/molnet/example_RiPP.fasta	lantibiotic	TITTVTVTSTSIWASTVSNHC	T-18IT-18T-18VTVTS-18T-18S-18IWASTV-138.95918SNHC-80	8	6.5e-11	0	941.536	266.691	2
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+4820	4	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	1032	test_data/molnet/example_RiPP.fasta	lantibiotic	TITTVTVTSTSIWASTVSNHC	T-18IT-18T-18VT-18VT-18S-16TSIWAST-18VSN-361.09554HC	8	6.5e-11	0	862.467	279.235	2
+	### Level "1": Neighbours at distance 1 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4806	3	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1037	850.991	281.055
+	4818	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1035	860.727	280.493
+	4819	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1041	860.977	282.026
+	4810	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1031	851.494	279.521
+	### Level "2": Neighbours at distance 2 edge(s)
+	#ClusterId	ClusterSize	SpecFile	Scan	SpectrumMass	Retention
+	4259	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	896	688.357	243.541
+	4847	1	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	987	895.008	267.862
+	4820	4	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	1032	862.483	279.754
+	4751	2	C18p_5uL_NASA_Sample_BB4_01_25960.mzML	1015	801.454	274.902
+	4846	2	C18p_5uL_NASA_Sample_BB2_01_25958.mzML	989	894.504	268.465
+### Level "root": Primary identification
+#ClusterId	ClusterSize	SpecFile	Scan	SeqFile	Class	FragmentSeq	ModifiedSeq	Score	P-Value	PeptideMass	SpectrumMass	Retention	Charge
+3615	6	C18p_5uL_NASA_Sample_BB3_01_25959.mzML	936	test_data/molnet/example_RiPP.fasta	lantibiotic	TSTSIWASTVSNHC	T-18STSIW-369.18346AS-18T-18VSNHT-64	8	6.8e-12	0	502.742	255.479	2

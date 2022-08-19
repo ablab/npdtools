@@ -1,0 +1,13 @@
+enabler DUF4135
+enabler JmjC
+enabler Cupin-4
+single T+39 T C8H14O3 Dha.mol N-ter DUF4135 0
+single M+44 M C7H15NO3S Dha.mol all B12-binding 0
+single I+14 I C7H15NO2 Dha.mol all B12-binding 0
+single Q+14 Q C6H12N2O3 Dha.mol all B12-binding 0
+single V+14 V C6H13NO2 Dha.mol all B12-binding 0
+single T+14 T C5H11NO3 Dha.mol all B12-binding 0
+single N+14 N C5H10N2O3 Dha.mol all MTS 0
+single N+16 N C4H8N2O4 Dha.mol all Cupin-4 0
+single N+30 N C5H10N2O4 Dha.mol all Cupin-4 0
+single V+16 V C5H11NO3 Dha.mol all Cupin-4 0

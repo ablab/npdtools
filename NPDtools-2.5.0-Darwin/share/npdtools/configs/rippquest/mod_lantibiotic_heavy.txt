@@ -1,0 +1,44 @@
+enabler Antimicr18
+enabler ClassIIILanti
+enabler ClassIILanti
+enabler ClassILanti
+enabler ClassIVLanti
+enabler Gallidermin
+enabler LANC-like
+enabler lacticin-l
+enabler leader-d
+enabler leader-abc
+enabler leader-eh
+enabler L-biotic-A
+enabler Lant-dehyd-C
+enabler Lant-dehyd-N
+enabler mature-ha
+enabler lacticin-mat
+enabler mature-b
+enabler mature-d
+enabler mature-ab
+enabler mature-a
+enabler TIGR03731
+single S-18 S C3H5NO2 Dha.mol all all 0
+single T-18 T C4H7NO2 Dhb.mol all all 0
+single S-16 S C3H7NO2 Ala.mol all FMN-red -1
+single T-16 T C4H9NO2 Abu.mol all FMN-red -1
+single C-34 C C3H5NO2 X.mol all all -1
+single S+16 S C3H7NO2S X.mol all all -1
+single S-17 S C3H4O3 Pyruvic.mol N-ter all -1
+single T-17 T C4H6O3 Methyl-Pyruvic.mol N-ter all -1
+single S-15 S C4H8O3 lactate.mol N-ter ElxO -1
+single C-80 C C2H3N X.mol C-ter Flavoprotein -1
+single S-64 C C2H3N X.mol C-ter Flavoprotein -1
+single T-64 C C3H5N X.mol C-ter Flavoprotein -1
+single S-16 S C3H7NO2 D-Ala.mol all LtnJ -1
+single D+16 D C4H7NO5 Hydroxy-Asp.mol all CinX -1
+single K-18 K C6H12N2O Dehyd-Lys.mol all Cinorf7 -1
+single C-1 C C3H6NO2S Disulfide-Cys.mol all DsbB -1
+single C-1 C C3H6NO2S Disulfide-Cys.mol all all -1
+single W+34 W C11H11N2O2Cl Chloro-Trp.mol all MibHS -1
+single P+16 P C5H9NO3 Hydroxy-Pro.mol all MibO -1
+single P+32 P C5H9NO4 Dihydroxy-Pro.mol all MibO -1
+single C+16 C C3H7NO3S X.mol all GarO -1
+single A+42 A C5H9NO3 Acetyl-Ala.mol N-ter all -1
+constraint 2 S+16 1 C-34 -1 eq 0

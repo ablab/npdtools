@@ -1,0 +1,68 @@
+/* THE FOLLOWING STYLES ARE FOR THE TABLE DISPLAYING THE ANNOTATED PEAKS */
+#table_scroll {
+  width: 400px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#table_scroll th, td {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+#table_scroll td, th {
+	width: 85px;
+}
+#table_scroll thead tr {
+    width: 400px;
+    display: block;
+    position: relative;
+}
+#table_scroll tbody {
+    width: 400px;
+    display: block;
+    overflow: auto;
+    height: 160px;
+}
+
+div.lorikeet .annoPeaksTable {
+    border-collapse:collapse;
+	border-color:#DDDDDD;
+}
+div.lorikeet .annoPeaksTable th {
+	background-color:#BDB76B;
+	border: 1px solid #666666;
+}
+#table_scroll.annoPeaksTable td {
+	border: 1px solid #666666;
+	text-align: right;
+	background-color:#FFFFFF;
+	font-size: 8pt;
+}
+#table_scroll.annoPeaksTable tr.selected_row td {
+    background-color: #46d3ff;
+}
+div.lorikeet .annoPeaksHeader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.infoTable {
+    float: left;
+	font-family: "Trebuchet MS",Arial,sans-serif;
+    font-size: 12px;
+    padding-right: 40px;
+}
+.infoTable th {
+    border: 1px solid #666666;
+    background-color: #F5F5DC;
+}
+.infoTable td.field_name {
+    border: 1px solid #666666;
+    background-color: #F5F5DC;
+}
+
+.span_tip {
+    font-size: 8pt;
+    margin-top: 5px;
+    color: sienna;
+}

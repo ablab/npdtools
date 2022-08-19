@@ -1,0 +1,10 @@
+bond Fragmentation_rule/General_rule/NC.mol 0 NC 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/General_rule/OC.mol 0 OC 1 1 1.0078250321 -1.0078250321
+bond Fragmentation_rule/General_rule/CC.mol 0 CC 2 2 1.0078250321 -1.0078250321 1.0078250321 -1.0078250321
+max_linear_total 3
+max_cyclic_total 1
+max_total 3
+max_linear CC 1
+max_cyclic CC CC 0
+max_cyclic CC NC 0
+max_cyclic CC OC 0

@@ -1,0 +1,13 @@
+enabler LANC-like
+single Y+68 Y C14H19NO3 X.mol all all 0
+single F+68 F C14H19NO2 X.mol all all 0
+single S+68 F C8H15NO3 X.mol all all 0
+single T+68 F C8H17NO4 X.mol all all 0
+single C-20 C C3H3NOS none all all 0
+single C-6 C C4H5NOS none all all 0
+single C-18 C C3H5NOS none all all 0
+single T-18 T C4H7NO2 none all all 0
+single S-18 S C3H5NO2 none all all 0
+single T-20 T C4H5NO2 none all all 0
+single S-20 S C3H3NO2 none all all 0
+single I+136 I C16H29NO2 none all all 0

@@ -1,0 +1,36 @@
+amino-acid PubChem-ID Norine-name Formula MolFile
+aad 469 Aad C6H11NO4 - 0 -1  -
+abu 80283 Abu C4H9NO2 - 0 -1  -
+ala 5950 Ala C3H7NO2 A 1 A 0 -
+asn 6267 Asn C4H8N2O3 N 1 N 2 -
+asp 5960 Asp C4H7NO4 D 1 D 3 -
+arg 6322 Arg C6H14N4O2 R 1 R 1 -
+bht 13309269 bOH_Tyr C9H11NO4 - 0 -1 -
+cys 5862 Cys C3H7NO2S C 1 C 4 -
+dhb -1 diOH-Bz C7H6O4 B 0 -1 -
+dhpg 108001 Dhpg C8H9NO4 - 0 -1 -
+dht -1 none C9H9NO3 - 0 -1 -
+dpg 108001 Dhpg C8H9NO4 - 0 -1 -
+gln 5961 Gln C5H10N2O3 Q 1 Q 5 -
+glu 7847075 Glu C5H9NO4 E 1 E 6 -
+gly 750 Gly C2H5NO2 G 1 G 7 -
+hpg 36143 Hpg C8H9NO3 - 0 -1 -
+ile 6306 Ile C6H13NO2 I 1 I 9 -
+iva 94744 Ival C5H11NO2 - 0 -1 -
+leu 6106 Leu C6H13NO2 L 1 L 10 -
+lys 5962 Lys C6H14N2O2 K 1 K 11 -
+orn 6262 Orn C5H12N2O2 O 0 -1 -
+phe 6140 Phe C9H11NO2 F 1 F 13 -
+phg 99291 Ph-Gly C8H9NO2 - 0 -1 -
+pip 439227 Hpr C6H11NO2 - 0 -1  -
+pro 145742 Pro C5H9NO2 P 1 P 14 -
+sal -1 none C7H6O3 - 0 -1 -
+ser 5951 Ser C3H7NO3 S 1 S 15 -
+thr 6288 Thr C4H9NO3 T 1 T 16 -
+trp 6305 Trp C11H12N2O2 W 1 W 17 -
+tyr 6057 Tyr C9H11NO3 Y 1 Y 18 -
+val 6287 Val C5H11NO2 V 1 V 19 -
+met 6137 Met C5H11NO2S M 1 M 12 -
+his 6274 His C6H9N3O2 H 1 H 8 -
+3-me-glu 237657 3Me-Glu C6H11NO4 - 0 -1 -
+dha -1 none C6H4O4 - U -1 -

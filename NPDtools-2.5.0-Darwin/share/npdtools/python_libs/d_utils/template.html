@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>PSM Viewer</title>
+    
+    <!--[if IE]><script language="javascript" type="text/javascript" src="html_aux_files/js/excanvas.min.js"></script><![endif]-->
+    <script type="text/javascript" src="html_aux_files/js/jquery.min.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/jquery.flot.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/jquery.flot.canvas.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/jquery.flot.selection.js"></script>
+    
+    <script type="text/javascript" src="html_aux_files/js/specview_mod.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/peptide.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/aminoacid.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/ion.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/ChemDoodleWeb-libs.js"></script>
+    <script type="text/javascript" src="html_aux_files/js/ChemDoodleWeb.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="html_aux_files/css/lorikeet.css" />
+    <link rel="stylesheet" type="text/css" href="html_aux_files/css/additional.css" />
+</head>
+<body>
+
+<!-- PLACE HOLDER DIV FOR THE SPECTRUM -->
+<div id="lorikeet" style="float:left"></div>
+
+<script type="text/javascript">
+	var response = '{{ JSON }}';
+    psm_details = JSON.parse(response);
+    var container;
+    var mol = psm_details.mol ? ChemDoodle.readMOL(psm_details.mol) : null;
+    var sequence = psm_details.sequence ? psm_details.sequence : null;
+    var modification = psm_details.modification ? psm_details.modification : null;
+
+$(document).ready(function () {
+	/* render the spectrum with the given options */
+	$("#lorikeet").specview_dereplicator({
+            spectrumInfo: psm_details.spectrumInfo,
+            compoundInfo: psm_details.compoundInfo,
+            spectrum: psm_details.spectrum,
+            annotation: psm_details.annotation,
+            mol: mol,
+            sequence: sequence,
+            atomComponents: psm_details.atomComponents,
+            fragmentedBonds: psm_details.fragmentedBonds,
+            modification: modification
+    });
+});
+</script>
+
+</body>
+
+</html>
